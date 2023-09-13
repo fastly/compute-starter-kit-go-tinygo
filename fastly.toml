@@ -5,8 +5,8 @@ authors = ["<oss@fastly.com>"]
 description = "A basic starter kit that demonstrates routing, simple synthetic responses and overriding caching rules."
 language = "go"
 manifest_version = 3
-name = "Default starter for Go"
+name = "TinyGo starter kit for Go"
 
 [scripts]
     env_vars = ["GOARCH=wasm", "GOOS=wasip1"]
-    build = "go build -o bin/main.wasm ."
+    build = "tinygo build -target=wasi -o bin/main.wasm ./"
