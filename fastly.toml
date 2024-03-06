@@ -10,3 +10,4 @@ name = "TinyGo starter kit for Go"
 [scripts]
     env_vars = ["GOARCH=wasm", "GOOS=wasip1"]
     build = "tinygo build -target=wasi -o bin/main.wasm ./"
+    post_init = "go get github.com/fastly/compute-sdk-go@latest"
